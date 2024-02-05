@@ -22,6 +22,12 @@
     z-index: 1000;
 }
 
+.main {
+    background-color: #ebdcadd5;
+    margin: 0px;
+    padding: 0%;
+}
+
 .footer {
     background-color: #40B63B;
     margin: 0px;
