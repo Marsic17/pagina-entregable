@@ -139,9 +139,39 @@
     margin-right: 20px;
 }
 
+.grid-containerubicacion{
+    display: grid; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.grid-itemI{
+    grid-area: img1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-itemF{
+    grid-area: img2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-itemD{
+    grid-area: img3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.txt-ubicacion{
+    text-align: center;
+}
+
 .grid-containerinicio{
     display: grid;
-   
 }
 
 .grid-item1{
@@ -177,15 +207,6 @@ align-items: center;
 
 .menu-btn{
     display: none;
-}
-
-.container-entradas{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 20px;
 }
 
 .maps{
@@ -249,6 +270,12 @@ align-items: center;
             "img1 img2 img3"; /* Cambiar a dos filas */
         grid-template-columns: repeat(3, 1fr); /* 3 columnas */
     }
+
+    .grid-containerubicacion {
+        grid-template-areas: 
+            "img1 img2 img3"; /* Cambiar a dos filas */
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    }
 }
 
 /* Media query para pantallas más pequeñas (769px o menos) */
@@ -265,5 +292,18 @@ align-items: center;
     /* Estilos para imágenes en pantallas más pequeñas */
     .imginicio {
         width: 70%; /* Reducir el ancho */
+    }
+
+    .grid-containerubicacion {
+        grid-template-areas: 
+            "img1"
+            "img2"
+            "img3"; /* Cambiar a una columna */
+        grid-template-columns: 1fr; /* 1 columna */
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .entradas{
+        width: 70%;
     }
 }
