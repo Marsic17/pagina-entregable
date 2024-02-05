@@ -10,16 +10,6 @@
     position: sticky;
 }
 
-.facebook {
-    width: 15%;
-    height: 5%;
-}
-
-.instagram {
-    width: 15%;
-    height: 5%;
-}
-
 .header {
     background-color: #40B63B;
     padding-top: 5px;
@@ -267,39 +257,39 @@ align-items: center;
 @media only screen and (min-width: 769px) {
     .grid-containerinicio {
         grid-template-areas: 
-            "img1 img2 img3"; /* Cambiar a dos filas */
-        grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+            "img1 img2 img3"; 
+        grid-template-columns: repeat(3, 1fr); 
     }
 
     .grid-containerubicacion {
         grid-template-areas: 
-            "img1 img2 img3"; /* Cambiar a dos filas */
-        grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+            "img1 img2 img3"; 
+        grid-template-columns: repeat(3, 1fr); 
     }
 }
 
-/* Media query para pantallas más pequeñas (769px o menos) */
+
 @media only screen and (max-width: 769px) {
     .grid-containerinicio {
         grid-template-areas: 
             "img1"
             "img2"
-            "img3"; /* Cambiar a una columna */
-        grid-template-columns: 1fr; /* 1 columna */
+            "img3"; 
+        grid-template-columns: 1fr; 
         grid-template-rows: repeat(3, auto);
     }
 
-    /* Estilos para imágenes en pantallas más pequeñas */
+   
     .imginicio {
-        width: 70%; /* Reducir el ancho */
+        width: 70%; 
     }
 
     .grid-containerubicacion {
         grid-template-areas: 
             "img1"
             "img2"
-            "img3"; /* Cambiar a una columna */
-        grid-template-columns: 1fr; /* 1 columna */
+            "img3"; 
+        grid-template-columns: 1fr; 
         grid-template-rows: repeat(3, auto);
     }
 
