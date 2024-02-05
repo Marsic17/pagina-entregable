@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opiniones</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <img src="../css/images/logo-removebg.png" class="logo_principal" alt="logo_hacienda_la_montaña">
+
+        <nav>
+            <ul class="sections">
+                <li> <a href="../index.html">Inicio </a> </li>
+                <li> <a href="/sections/Donde_nos_ubicamos.html">Donde nos ubicamos</a> </li>
+                <li> <a href="/sections/Nuestros_servicios.html">Servicios</a> </li>
+                <li> <a href="/sections/Opiniones.html">Opiniones</a> </li>
+                <li> <a href="/sections/Contactanos.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <h1> Comentarios </h1>
+
+        <p> Dejanos tus comentarios seran de mucha ayuda </p>
+        <section id="app"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="Comentario">
+                            <p v-for = "items in item" v-text="items"> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <textarea type="text" class="input" placeholder="Escribe un comentario" v-model="newitem" @servicios.web="addItem()"> </textarea>
+                        <button v-on:click="addItem()" class="primarycontained float-right" type="enviar"> Añadir comentario </button> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <h2> Nuestras redes sociales </h2>
+        <a href="https://www.facebook.com/HaciendalaMontanacajica/" target="_blank"> <img src="../css/images/logo facebook.png" class="facebook" alt="facebook"> </a> 
+        <a href="https://www.instagram.com/hacienda_lamontana/" target="_blank"> <img src="../css/images/logo instagram.png" class="instagram" alt="instagram"> </a>
+
+        <p> diseñado por Miguel M. </p>
+
+        <img src="../css/images/logo-removebg.png" class="logo_principal" alt="logo_hacienda_la_montaña">
+
+    </footer>
+    
+</body>
+</html>

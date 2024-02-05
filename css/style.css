@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo_principal {
+    width:20% ;
+    height: 10%;
+    position: sticky;
+}
+
+.facebook {
+    width: 15%;
+    height: 5%;
+}
+
+.instagram {
+    width: 15%;
+    height: 5%;
+}
+
+.header {
+    background-color: #40B63B;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    z-index: 1000;
+}
+
+.main {
+    background-color: #ebdcadd5;
+    margin: 0px;
+    padding: 0%;
+}
+
+.footer {
+    background-color: #40B63B;
+    margin: 0px;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-text{
+    text-align: center;
+}
+
+.footer h4{
+    order: 1;
+}
+
+.social-icons {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 10px;
+
+}
+
+
+
+.imginicio {
+    width: 70%;
+    height: auto;
+}
+
+.entradas {
+    width: 400px;
+    height: 200px;
+}
+
+.servicio {
+    width: 400px;
+    height: 350px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+.comment { 
+    display: block;
+    transition: all 2s;
+}
+
+.commentclicked {
+    min-height: 0px;
+    border: 2px solid #eee;
+    border-radius: 6px;
+    padding: 6px 11px;
+}
+
+.gmail {
+    width: 70px;
+    height: 50px;
+}
+
+.whatsapp {
+    width: 70px;
+    height: 50px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    max-height: 400px;
+}
+
+.carousel-inner{
+ height: 40%;
+}
+
+#carouselExampleIndicators{
+    width: 95%;
+    height: 40%;
+    margin: auto;
+    padding: 20px;
+}
+
+.container-nav{
+  list-style-type: none;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+  padding: 0%;
+}
+
+.nav-item{
+    margin-right: 20px;
+}
+
+.grid-containerinicio{
+    display: grid;
+   
+}
+
+.grid-item1{
+grid-area: img1;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.grid-item2{
+    grid-area: img2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-item3{
+    grid-area: img3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-inicio{
+    text-align: center;
+    margin: 5%;
+}   
+
+.nav-item a{
+    color:antiquewhite;
+    text-decoration: none;
+}
+
+.menu-btn{
+    display: none;
+}
+
+.container-entradas{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+.maps{
+    display: flex;
+    justify-content: center;
+}
+.iframe-maps{
+    width: 80%;
+    height: 500px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.main > *:last-child {
+    margin-bottom: 0;
+}
+
+.footer > *:first-child {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .container-nav {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        background-color: #686565;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+      
+    .container-nav.show {
+        display: block;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .menu-btn {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        background: none;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        color: white;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .grid-containerinicio {
+        grid-template-areas: 
+            "img1 img2 img3"; /* Cambiar a dos filas */
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    }
+}
+
+/* Media query para pantallas más pequeñas (769px o menos) */
+@media only screen and (max-width: 769px) {
+    .grid-containerinicio {
+        grid-template-areas: 
+            "img1"
+            "img2"
+            "img3"; /* Cambiar a una columna */
+        grid-template-columns: 1fr; /* 1 columna */
+        grid-template-rows: repeat(3, auto);
+    }
+
+    /* Estilos para imágenes en pantallas más pequeñas */
+    .imginicio {
+        width: 70%; /* Reducir el ancho */
+    }
+}

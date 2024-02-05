@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hacienda la montaña</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/_globals.css">
+  <link rel="stylesheet" href="./css/index.css">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <header class="header">
+    <img src="./css/images/logo-removebg.png" class="logo_principal" alt="logo_hacienda_la_montaña">
+    <div class="menu-container">
+      <button class="menu-btn">&#9776;</button>
+      <nav>
+        <ul class="container-nav">
+          <li class="nav-item"> <a href="index.html">Inicio </a> </li>
+          <li class="nav-item"> <a href="./sections/Donde_nos_ubicamos.html">Donde nos ubicamos</a> </li>
+          <li class="nav-item"> <a href="./sections/Nuestros_servicios.html">Servicios</a> </li>
+          <li class="nav-item"> <a href="./sections/Opiniones.html">Opiniones</a> </li>
+          <li class="nav-item"> <a href="./sections/Contactanos.html">Contactanos</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    
+  </header>
+
+  <main class="main">
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./css/images/inicio/cabaña noche.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./css/images/inicio/salon por dentro.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./css/images/inicio/salon por fuera.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./css/images/inicio/tripode.webp" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <p class="text-inicio"> Podras encontrar servicios para distintos tipos de eventos como lo pueden ser </p>
+    <section class="grid-containerinicio">
+      <div class="grid-item1"> <img class="imginicio" src="./css/images/inicio/boda imagen (1).jpg" alt="Boda">
+        <p> Bodas </p>
+      </div>
+      <div class="grid-item2"> <img class="imginicio" src="./css/images/inicio/15 años.jpg" alt="15 años">
+        <p> 15 años </p>
+      </div>
+      <div class="grid-item3"> <img class="imginicio" src="./css/images/inicio/despedidas-empresariales 1.jpg"
+          alt="empresariales">
+        <p> despedidas empresariales </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-left">
+      <h4>Nuestras redes sociales</h4>
+
+      <div class="social-icons">
+          <div class="icon-image"> 
+            <a href="https://www.facebook.com/HaciendalaMontanacajica/" target="_blank">
+              <i class="fa-brands fa-facebook fa-2xl"></i>
+            </a>
+          </div>
+
+          <div class="icon-image">
+            <a href="https://www.instagram.com/hacienda_lamontana/" target="_blank">
+              <i class="fa-brands fa-instagram fa-2xl" style="color: #B197FC;"></i>
+            </a>
+          </div>
+          <div class="icon-image">
+            <a href="https://wa.me/+573153529925" target="_blank">
+                <i class="fa-brands fa-whatsapp fa-2xl" style="color: #63E6BE;"></i>
+            </a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-text"> @ diseñado por Miguel M. </p>
+
+    <img src="./css/images/logo-removebg.png" class="logo_principal" alt="logo_hacienda_la_montaña">
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/9b8ce6708a.js" crossorigin="anonymous"></script>
+  <script>
+
+    document.querySelector('.menu-btn').addEventListener('click', function () {
+      var menu = document.querySelector('.container-nav');
+      var btn = document.querySelector('.menu-btn');
+
+      menu.classList.toggle('show');
+
+      // Cambia el ícono del botón
+      if (menu.classList.contains('show')) {
+        btn.innerHTML = 'X'; // X
+      } else {
+        btn.innerHTML = '&#9776;'; // Menú hamburguesa
+      }
+    });
+  </script>
+
+</body>
+
+</html>
