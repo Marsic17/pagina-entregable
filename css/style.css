@@ -189,7 +189,7 @@ align-items: center;
 
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
     .grid-containerinicio {
         grid-template-areas: 
             "img1"
@@ -208,7 +208,7 @@ align-items: center;
 /* donde nos ubicamos */
 
 .entradas {
-    width: 400px;
+    width: 500px;
     height: 200px;
 }
 
@@ -272,6 +272,11 @@ align-items: center;
     height: 50px;
 }
 
+.comunicate{
+    text-align: center;
+    padding-top: 40px;
+}
+
 /* opiniones */
 
 .comments-section {
@@ -321,27 +326,36 @@ align-items: center;
     height: 350px;
 }
 
-.container {
-    max-width: 600px;
-    margin: 20px auto;
-    background: #fff;
-    border-radius: 7px;
+img{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.column{
+    flex: 25%;
     padding: 20px;
 }
 
-.comment { 
-    display: block;
-    transition: all 2s;
+.column img{
+    margin-top: 5px;
 }
 
-.commentclicked {
-    min-height: 0px;
-    border: 2px solid #eee;
-    border-radius: 6px;
-    padding: 6px 11px;
+@media (max-width: 800px){
+    .column{
+        flex: 50%;
+    }
 }
 
-
+@media (max-width: 600px){
+    .column{
+        flex: 100%;
+    }
+}
 
 
 
