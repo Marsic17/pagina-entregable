@@ -262,21 +262,42 @@ align-items: center;
 
 /* contactanos */
 
-.gmail {
-    width: 70px;
-    height: 50px;
-}
-
-.whatsapp {
-    width: 70px;
-    height: 50px;
-}
-
-.comunicate{
-    text-align: center;
+.gmail, .whatsapp {
+    max-width: 35%; 
+    height: auto; 
+    display: inline-block; 
+    vertical-align: middle; 
+    padding-bottom: 40px;
+    padding-right: 25px;
     padding-top: 40px;
+}
+
+.contact-info p {
+    display: inline-block; 
+    margin-left: 10px; 
+    vertical-align: middle; 
+}
+
+.comunicate {
+    text-align: center;
+    padding-top: 60px;
     padding-bottom: 40px;
 }
+
+@media screen and (max-width: 700px) {
+    .contact-info {
+        display: block; /* Cambiar a bloque para que el texto aparezca debajo de las imágenes */
+    }
+
+    .contact-info img, .contact-info p {
+        display: block; /* Cambiar a bloque para que las imágenes y el texto se apilen verticalmente */
+        margin: 0 auto; /* Centrar las imágenes y el texto */
+        text-align: center; /* Alinear el texto al centro */
+        padding-bottom: 20px;
+        max-width: 80%;
+    }
+}
+
 
 /* opiniones */
 
