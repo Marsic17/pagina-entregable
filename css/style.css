@@ -276,6 +276,8 @@ align-items: center;
     display: inline-block; 
     margin-left: 10px; 
     vertical-align: middle; 
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .comunicate {
@@ -284,17 +286,23 @@ align-items: center;
     padding-bottom: 40px;
 }
 
-@media screen and (max-width: 700px) {
+.title-contactanos{
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 755px) {
     .contact-info {
-        display: block; /* Cambiar a bloque para que el texto aparezca debajo de las imágenes */
+        display: block; 
     }
 
     .contact-info img, .contact-info p {
-        display: block; /* Cambiar a bloque para que las imágenes y el texto se apilen verticalmente */
-        margin: 0 auto; /* Centrar las imágenes y el texto */
-        text-align: center; /* Alinear el texto al centro */
+        display: block; 
+        margin: 0 auto; 
+        text-align: center; 
         padding-bottom: 20px;
         max-width: 80%;
+        padding-top: 20px;
+        font-size: medium ;
     }
 }
 
