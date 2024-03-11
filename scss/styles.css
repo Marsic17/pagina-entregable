@@ -46,6 +46,99 @@
   padding: 0%;
 }
 
+@media only screen and (max-width: 768px) {
+  .container-nav {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: #686565;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .container-nav.show {
+    display: block;
+  }
+  .nav-item {
+    margin: 10px 0;
+    text-align: center;
+    padding: 20px;
+  }
+  .menu-btn {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    margin-right: 20px;
+  }
+}
+@media only screen and (min-width: 1070px) {
+  #carouselExampleIndicators {
+    width: 58%;
+  }
+}
+@media only screen and (min-width: 770px) {
+  .grid-containerinicio {
+    grid-template-areas: "img1 img2 img3";
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .grid-containerinicio {
+    grid-template-areas: "img1" "img2" "img3";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+  .imginicio {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .grid-containerubicacion {
+    grid-template-areas: "img1 img2 img3";
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 769px) {
+  .grid-containerubicacion {
+    grid-template-areas: "img1" "img2" "img3";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+  .entradas {
+    width: 70%;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 755px) {
+  .contact-info {
+    display: block;
+  }
+  .contact-info img, .contact-info p {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+    max-width: 80%;
+    padding-top: 20px;
+    font-size: medium;
+  }
+}
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+  }
+}
 .container-nav {
   list-style-type: none;
   display: flex;
