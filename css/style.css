@@ -28,6 +28,7 @@
     background-color: #ebdcadd5;
     margin: 0px;
     padding: 0%;
+    overflow-x: hidden;
 }
 
 .footer {
@@ -171,6 +172,7 @@ align-items: center;
 .text-inicio{
     text-align: center;
     margin: 5%;
+    font-size: medium;
 }   
 
 @media (min-width: 1070px){
@@ -223,6 +225,7 @@ align-items: center;
 
 .txt-ubicacion{
     text-align: center;
+    font-size: medium;
 }
 
 .maps{
@@ -317,7 +320,7 @@ align-items: center;
     height: 64vh;
 }
 
-.comments-section h2 {
+.comments-section h1 {
     text-align: center;
 }
 
@@ -366,13 +369,18 @@ img{
     flex-wrap: wrap;
 }
 
-.column{
+.column{    
     flex: 25%;
     padding: 20px;
 }
 
 .column img{
     margin-top: 5px;
+}
+
+.galeria{
+    text-align: center;
+    padding-top: 20px;
 }
 
 @media (max-width: 800px){
