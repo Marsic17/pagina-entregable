@@ -6,18 +6,23 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    &__footer-text {
+        text-align: center;
+    }
+    &__left h4 {
+        order: 1;
+    }
+    &__social-icons {
+        display: flex;
+        gap: 30px;
+        padding-bottom: 10px;
+    }
+    &__logo_principal{ 
+            width:20% ;
+            height: 10%;
+            position: sticky;
+    }
 }
 
-.footer-text {
-    text-align: center;
-}
 
-.footer h4 {
-    order: 1;
-}
 
-.social-icons {
-    display: flex;
-    gap: 30px;
-    padding-bottom: 10px;
-}

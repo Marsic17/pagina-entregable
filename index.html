@@ -7,23 +7,23 @@
   <title>Hacienda la montaña</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./scss/styles.css">
 
 </head>
 
 <body>
 
   <header class="header">
-    <img src="images/logo-removebg.png" class="logo_principal" alt="logo hacienda la montaña">
-    <div class="menu-container">
-      <button class="menu-btn">&#9776;</button>
+    <img src="images/logo-removebg.png" class="header__logo_principal" alt="logo hacienda la montaña">
+    <div class="header__menu-container">
+      <button class="header__menu-btn">&#9776;</button>
       <nav>
-        <ul class="container-nav">
-          <li class="nav-item"> <a href="./index.html">Inicio </a> </li>
-          <li class="nav-item"> <a href="./sections/donde_nos_ubicamos.html">Donde nos ubicamos</a> </li>
-          <li class="nav-item"> <a href="./sections/Nuestros_servicios.html">servicios</a> </li>
-          <li class="nav-item"> <a href="./sections/Opiniones.html">opiniones</a> </li>
-          <li class="nav-item"> <a href="./sections/Contactanos.html">contactanos</a></li>
+        <ul class="header__container-nav">
+          <li class="header__nav-item"> <a href="./index.html">Inicio </a> </li>
+          <li class="header__nav-item"> <a href="./sections/donde_nos_ubicamos.html">Donde nos ubicamos</a> </li>
+          <li class="header__nav-item"> <a href="./sections/Nuestros_servicios.html">servicios</a> </li>
+          <li class="header__nav-item"> <a href="./sections/Opiniones.html">opiniones</a> </li>
+          <li class="header__nav-item"> <a href="./sections/Contactanos.html">contactanos</a></li>
         </ul>
       </nav>
     </div>
@@ -32,7 +32,7 @@
     
   </header>
 
-  <main class="main">
+  <main class="mainIndex">
 
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
@@ -72,15 +72,15 @@
     </div>
 
 
-    <h1 class="text-inicio"> Podras encontrar servicios para distintos tipos de eventos como lo pueden ser </h1>
-    <section class="grid-containerinicio">
-      <div class="grid-item1"> <img class="imginicio" src="images/inicio/boda imagen (1).jpg" alt="Boda">
+    <h1 class="mainIndex__text-inicio"> Podras encontrar servicios para distintos tipos de eventos como lo pueden ser </h1>
+    <section class="mainIndex__grid-containerinicio">
+      <div class="mainIndex__grid-item1"> <img class="mainIndex__imginicio" src="images/inicio/boda imagen (1).jpg" alt="Boda">
         <p> Bodas </p>
       </div>
-      <div class="grid-item2"> <img class="imginicio" src="images/inicio/15 años.jpg" alt="15 años">
+      <div class="mainIndex__grid-item2"> <img class="mainIndex__imginicio" src="images/inicio/15 años.jpg" alt="15 años">
         <p> 15 años </p>
       </div>
-      <div class="grid-item3"> <img class="imginicio" src="images/inicio/despedidas-empresariales 1.jpg"
+      <div class="mainIndex__grid-item3"> <img class="mainIndex__imginicio" src="images/inicio/despedidas-empresariales 1.jpg"
           alt="empresariales">
         <p> despedidas empresariales </p>
       </div>
@@ -89,31 +89,31 @@
   </main>
 
   <footer class="footer">
-    <div class="footer-left">
+    <div class="footer__left">
       <h4>Nuestras redes sociales</h4>
 
-      <div class="social-icons">
-          <div class="icon-image"> 
+      <div class="footer__social-icons">
+          <div class="footer__icon-image"> 
             <a href="https://www.facebook.com/HaciendalaMontanacajica/" target="_blank">
               <i class="fa-brands fa-facebook fa-2xl"></i>
             </a>
           </div>
 
-          <div class="icon-image">
+          <div class="footer__icon-image">
             <a href="https://www.instagram.com/hacienda_lamontana/" target="_blank">
               <i class="fa-brands fa-instagram fa-2xl" style="color: #B197FC;"></i>
             </a>
           </div>
-          <div class="icon-image">
+          <div class="footer__icon-image">
             <a href="https://wa.me/+573153529925" target="_blank">
                 <i class="fa-brands fa-whatsapp fa-2xl" style="color: #63E6BE;"></i>
             </a>
         </div>
       </div>
     </div>
-    <p class="footer-text"> @ diseñado por Miguel M. </p>
+    <p class="footer__text"> @ diseñado por Miguel M. </p>
 
-    <img src="images/logo-removebg.png" class="logo_principal" alt="logo hacienda la montaña">
+    <img src="images/logo-removebg.png" class="footer__logo_principal" alt="logo hacienda la montaña">
 
   </footer>
   
@@ -123,9 +123,9 @@
     <script src="https://kit.fontawesome.com/2df3bbf5d0.js" crossorigin="anonymous"></script>
   <script>
 
-    document.querySelector('.menu-btn').addEventListener('click', function () {
-      var menu = document.querySelector('.container-nav');
-      var btn = document.querySelector('.menu-btn');
+    document.querySelector('.header__menu-btn').addEventListener('click', function () {
+      var menu = document.querySelector('.header__container-nav');
+      var btn = document.querySelector('.header__menu-btn');
 
       menu.classList.toggle('show');
 

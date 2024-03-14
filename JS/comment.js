@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const commentText = commentInput.value.trim();
         if (commentText !== '') {
             const commentElement = document.createElement('div');
-            commentElement.classList.add('comment');
+            commentElement.classList.add('mainOpiniones__comment');
             commentElement.textContent = commentText;
             commentsList.appendChild(commentElement);
             commentInput.value = '';

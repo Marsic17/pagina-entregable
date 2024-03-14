@@ -8,10 +8,28 @@
     position: sticky;
     top: 0%;
     z-index: 1000;
+    &__logo_principal {
+        width:20% ;
+        height: 10%;
+        position: sticky;
+    }
+    &__menu-btn {
+        display: none;
+    }
+    &__nav-item a {
+        color: antiquewhite;
+        text-decoration: none;
+    }
+    &__nav-item {
+        margin-right: 20px;
+    }
+    &__container-nav {
+        list-style-type: none;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0%;
+        padding: 0%;
+    }
 }
 
-.logo_principal {
-    width:20% ;
-    height: 10%;
-    position: sticky;
-}
