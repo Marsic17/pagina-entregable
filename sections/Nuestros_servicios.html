@@ -102,10 +102,21 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
         <script src="https://kit.fontawesome.com/9b8ce6708a.js" crossorigin="anonymous"></script>
-    <script>
-        document.querySelector('.menu-btn').addEventListener('click', function () {
-            document.querySelector('.container-nav').classList.toggle('show');
-        });
-    </script>
+        <script>
+
+          document.querySelector('.header__menu-btn').addEventListener('click', function () {
+            var menu = document.querySelector('.header__container-nav');
+            var btn = document.querySelector('.header__menu-btn');
+      
+            menu.classList.toggle('show');
+      
+            
+            if (menu.classList.contains('show')) {
+              btn.innerHTML = 'X'; // X
+            } else {
+              btn.innerHTML = '&#9776;'; 
+            }
+          });
+        </script>
 </body>
 </html>

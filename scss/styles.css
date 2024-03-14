@@ -30,6 +30,26 @@
 .header__nav-item {
   margin-right: 20px;
 }
+.header__nav-item a {
+  transition: color 0.3s ease;
+  position: relative;
+}
+.header__nav-item a:hover {
+  color: #087e08;
+}
+.header__nav-item a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #1f6926;
+  transition: width 0.3s;
+}
+.header__nav-item a:hover::after {
+  width: 100%;
+}
 .header__container-nav {
   list-style-type: none;
   display: flex;
@@ -187,7 +207,7 @@
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 20px;
-  height: 64vh;
+  height: 82vh;
 }
 .mainOpiniones__comments-section h1 {
   text-align: center;
